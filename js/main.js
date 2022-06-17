@@ -156,7 +156,7 @@ function _getClassifications(classificationsItem) {
     let massRegeneration = parseInt(classificationsItem.massRegeneration)
     let maxJumpMass = parseInt(classificationsItem.maxJumpMass)
     return _createElementFromString(`<div class="card bg-dark text-white">
-  <img src="/img/wh_colors/${_castClass(classificationsItem.class)}.png" class="card-img">
+  <img src="img/wh_colors/${_castClass(classificationsItem.class)}.png" class="card-img">
   <div class="card-img-overlay">
     <dl class="row">
         <dt class="col-sm-3">Hole</dt>
@@ -178,7 +178,7 @@ function _getClassifications(classificationsItem) {
 
 function _getSystems(systemItem) {
     return _createElementFromString(`<div class="card bg-dark text-white">
-  <img src="/img/wh_colors/${_castClass(systemItem.class)}.png" class="card-img">
+  <img src="img/wh_colors/${_castClass(systemItem.class)}.png" class="card-img">
   <div class="card-img-overlay">
     <dl class="row">
         <dt class="col-sm-3">System</dt>
