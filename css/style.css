@@ -127,3 +127,12 @@
         transform: rotate(360deg);
     }
 }
+
+#liveAlertPlaceholder {
+    position: fixed;
+    z-index: 9999;
+    top: 10px;
+    right: 10px;
+    width: 25%;
+    height: 100%;
+}

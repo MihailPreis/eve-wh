@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -17,19 +18,30 @@
     <script src="js/main.js"></script>
 
     <title>EvE WH Info</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T26QMZ3DVH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T26QMZ3DVH');
+    </script>
 </head>
 
 <body>
+    <div id="liveAlertPlaceholder"></div>
     <br><br><br>
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-5">
-                <input type="text" class="form-control" id="whSearch" placeholder="Enter WH code or system">
+                <input type="text" class="form-control" id="whSearch" placeholder="Enter WH code / system">
             </div>
         </div>
         <br>
         <div class="row justify-content-md-center">
-            <div class="col-auto" id="result"></div>
+            <div class="col-5" id="result"></div>
         </div>
     </div>
 </body>
